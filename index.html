@@ -51,7 +51,7 @@
         center: [45.522247, -122.676948],
         zoom: 12
       });
-      
+
 
       var CartoDB_DarkMatter = L.tileLayer('http://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png', {
       	attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
@@ -61,7 +61,7 @@
       cartodb.createLayer(map, {
             type: "torque",
             options: {
-              query: "select * from crime_incident_data where major_offense_type = 'Drugs'",
+              query: "select * from crime_incident_data where major_offense_type = 'Prostitution'",
               table_name: "crime_incident_data",
               user_name: "rpeterson",
               tile_style: CARTOCSS
